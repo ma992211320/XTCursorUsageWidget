@@ -1,4 +1,4 @@
-# CursorUsageWidget
+# XTCursorUsageWidget
 
 本机查看 Cursor 用量的开源客户端。
 
@@ -7,7 +7,8 @@
 
 成品安装包请到下载页获取，本仓库只含源码，不含服务端。
 
-下载：https://cursor.kj1001.fun
+- 仓库：https://github.com/ma992211320/XTCursorUsageWidget
+- 下载：https://cursor.kj1001.fun
 
 ## 目录
 
