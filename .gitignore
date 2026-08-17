@@ -1,4 +1,5 @@
 *.exe
+!/releases/*.exe
 payload.exe
 *.syso
 dist/

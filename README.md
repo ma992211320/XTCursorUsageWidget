@@ -5,14 +5,24 @@
 - **Windows**：XT-cursor 用量小工具（Go，GDI 自绘，当前 1.2.4）
 - **macOS**：桌面应用 + 小组件（Swift / SwiftUI，macOS 14+）
 
-成品安装包请到下载页获取，本仓库只含源码，不含服务端。
+本仓库含客户端源码和可直接安装的成品，不含服务端。
 
 - 仓库：https://github.com/ma992211320/XTCursorUsageWidget
-- 下载：https://cursor.kj1001.fun
+- 站点下载：https://cursor.kj1001.fun
+
+## 直接安装
+
+| 系统 | 版本 | 文件 |
+|------|------|------|
+| Windows | 1.2.4 | [XT-cursor用量小工具-1.2.4-安装程序.exe](releases/XT-cursor用量小工具-1.2.4-安装程序.exe) |
+| macOS | 1.0 | [CursorUsageWidget-1.0.dmg](releases/CursorUsageWidget-1.0.dmg) |
+
+Windows 安装后可在开始菜单和「设置 → 应用」中找到。macOS 打开 dmg，把「Cursor用量」拖到「应用程序」。
 
 ## 目录
 
 ```
+releases/   可直接安装的 Windows / macOS 成品
 windows/    Windows 主程序与安装器源码
 macos/      macOS App 与 Widget 源码
 ```
