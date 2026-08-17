@@ -1,0 +1,29 @@
+XT-cursor用量小工具 编译说明
+
+需要：Go 1.24 或更高版本。
+在 Windows 上可直接编译；在 Linux / macOS 上交叉编译到 Windows amd64。
+
+一、编译绿色版 / 主程序
+
+在源码目录执行：
+
+  CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -ldflags "-s -w -H windowsgui" -o "XT-cursor用量小工具.exe" .
+
+若目录中有 rsrc_windows_amd64.syso（图标与版本信息），链接时会自动带上。
+可用 go-winres 根据 winres/winres.json 与 winres/icon.png 重新生成 .syso。
+
+二、编译安装程序
+
+1. 先按上面步骤编译出 XT-cursor用量小工具.exe
+2. 将其复制为 installer/payload.exe
+3. 将 rsrc_windows_amd64.syso 复制到 installer/（用于安装程序图标）
+4. 在 installer 目录执行：
+
+  CGO_ENABLED=0 GOOS=windows GOARCH=amd64 go build -ldflags "-s -w -H windowsgui" -o "../XT-cursor用量小工具-安装程序.exe" .
+
+说明
+- payload.exe 与 .syso 仅用于编译，不要放进发布用的源码包。
+- 绿色版双击即可运行，不会写入「设置 → 应用」。
+- 安装版由安装程序写入开始菜单、可选的桌面快捷方式，以及卸载信息。
+- 请使用 CGO_ENABLED=0，不要启用 CGO。
+- 心跳地址写在 heartbeat.go 的 reportBase，当前为 https://cursor.kj1001.fun

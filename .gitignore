@@ -1,0 +1,9 @@
+*.exe
+payload.exe
+*.syso
+dist/
+build/
+.DS_Store
+*.cer
+*.p12
+*.certSigningRequest

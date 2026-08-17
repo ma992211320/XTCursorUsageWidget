@@ -1,0 +1,30 @@
+name: CursorUsageWidget
+options:
+  bundleIdPrefix: com.local.cursorusage
+  deploymentTarget:
+    macOS: "14.0"
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+targets:
+  CursorUsageWidget:
+    type: application
+    platform: macOS
+    sources: [App, Shared]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.local.cursorusage.app
+        INFOPLIST_FILE: App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: App/CursorUsageWidget.entitlements
+    dependencies:
+      - target: CursorUsageWidgetExtension
+        embed: true
+  CursorUsageWidgetExtension:
+    type: app-extension
+    platform: macOS
+    sources: [Widget, Shared]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.local.cursorusage.app.widget
+        CODE_SIGN_ENTITLEMENTS: Widget/CursorUsageWidgetExtension.entitlements
+        INFOPLIST_FILE: Widget/Info.plist

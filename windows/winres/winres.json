@@ -1,0 +1,54 @@
+{
+  "RT_GROUP_ICON": {
+    "APP": {
+      "0000": [
+        "icon.png"
+      ]
+    }
+  },
+  "RT_MANIFEST": {
+    "#1": {
+      "0409": {
+        "identity": {
+          "name": "XTCursorUsage",
+          "version": "1.2.4"
+        },
+        "description": "XT-cursor用量小工具",
+        "minimum-os": "win7",
+        "execution-level": "asInvoker",
+        "ui-access": false,
+        "dpi-awareness": "perMonitorV2"
+      }
+    }
+  },
+  "RT_VERSION": {
+    "#1": {
+      "0000": {
+        "fixed": {
+          "file_version": "1.2.4.0",
+          "product_version": "1.2.4.0"
+        },
+        "info": {
+          "0409": {
+            "CompanyName": "XT",
+            "FileDescription": "XT-cursor用量小工具",
+            "FileVersion": "1.2.4",
+            "InternalName": "XTCursorUsage",
+            "OriginalFilename": "XT-cursor用量小工具.exe",
+            "ProductName": "XT-cursor用量小工具",
+            "ProductVersion": "1.2.4"
+          },
+          "0804": {
+            "CompanyName": "XT",
+            "FileDescription": "XT-cursor用量小工具",
+            "FileVersion": "1.2.4",
+            "InternalName": "XTCursorUsage",
+            "OriginalFilename": "XT-cursor用量小工具.exe",
+            "ProductName": "XT-cursor用量小工具",
+            "ProductVersion": "1.2.4"
+          }
+        }
+      }
+    }
+  }
+}

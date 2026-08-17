@@ -1,0 +1,6 @@
+build/
+dist/
+*.cer
+*.p12
+*.certSigningRequest
+.DS_Store
