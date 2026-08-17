@@ -1,0 +1,24 @@
+name: Publish GitHub Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >
+          gh release create "${GITHUB_REF_NAME}"
+          "releases/XT-cursor用量小工具-1.2.4-安装程序.exe"
+          "releases/CursorUsageWidget-1.0.dmg"
+          --title "Windows 1.2.4 / macOS 1.0"
+          --notes "Windows 1.2.4 安装程序与 macOS 1.0 DMG。源码在 windows/ 与 macos/，不含服务端。"

@@ -8,6 +8,7 @@
 本仓库含客户端源码和可直接安装的成品，不含服务端。
 
 - 仓库：https://github.com/ma992211320/XTCursorUsageWidget
+- 发布页：https://github.com/ma992211320/XTCursorUsageWidget/releases
 - 站点下载：https://cursor.kj1001.fun
 
 ## 直接安装
